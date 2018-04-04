@@ -98,7 +98,7 @@ function getData(arr) {
   })
 }
 
-firebase.initializeApp(config);
+firebase.initializeApp();
 
 var provider = new firebase.auth.GoogleAuthProvider();
 
