@@ -98,7 +98,9 @@ function getData(arr) {
   })
 }
 
-firebase.initializeApp(config);
+//firebase.initializeApp(config);
+
+firebase.auth().signInWithRedirect(provider);
 
 
 firebase.auth().getRedirectResult().then(function(result) {
